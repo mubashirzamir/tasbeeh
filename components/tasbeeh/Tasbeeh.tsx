@@ -31,8 +31,9 @@ const Tasbeeh = () => {
 
 const styles = StyleSheet.create({
     scrollContainer: {
-        width: "50%",
+        width: "100%",
         height: "100vh",
+        alignItems: "center"
     }
 });
 
