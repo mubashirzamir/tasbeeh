@@ -9,7 +9,7 @@ const Beads = ({amount}: BeadsProps) => {
     return (
         <View>
             {Array.from({length: amount}).map((_, index) => (
-                <Bead key={index}/>
+                <Bead key={index} index={index}/>
             ))}
         </View>
     )

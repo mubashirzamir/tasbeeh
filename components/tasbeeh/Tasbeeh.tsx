@@ -1,6 +1,6 @@
 "use client"
 
-import {ScrollView, View} from "react-native";
+import {ScrollView, StyleSheet, View} from "react-native";
 import Beads from "@/components/tasbeeh/beads/Beads";
 
 type TasbeehProps = {}
@@ -8,13 +8,12 @@ type TasbeehProps = {}
 const defaultOffset = 0
 
 const Tasbeeh = () => {
-
     const onScroll = () => {
         console.log('onScroll')
     }
 
     return (
-        <View>
+        <View style={styles.scrollContainer}>
             <ScrollView
                 contentOffset={{
                     x: 0,
@@ -29,5 +28,12 @@ const Tasbeeh = () => {
         </View>
     )
 }
+
+const styles = StyleSheet.create({
+    scrollContainer: {
+        width: "50%",
+        height: "100vh",
+    }
+});
 
 export default Tasbeeh
